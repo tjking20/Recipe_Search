@@ -25,6 +25,9 @@ class App extends Component {
 
   handleSubmit = (evt) => {
     evt.preventDefault();
+    // var config = {
+    // headers: {'Access-Control-Allow-Origin': '*'}
+    // };
 
     axios.get('http://food2fork.com/api/search?key=31a8cd7754dbe5780924db9f038d8134&q=pepper,chicken')
       .then(function (response) {
