@@ -18,39 +18,46 @@ class App extends Component {
 
     this.state = {
 
-      ingredients : ""
+      ingredients : "",
+      recipes : []
 
     }
 
   }
 
   handleInputChange = (evt) => {
-
     this.setState({
+      //setting the ingredient(s) to the value of the text in the input
       ingredients : evt.target.value
-    })
-
-
+    });
   }
 
 
   handleSubmit = (evt) => {
     
     evt.preventDefault();
-    console.log(this.state)
+    const self = this
 
+    //axios call sends an xmlHttpRequest to the api, and encodes it in JSON
     axios.get(`https://api.edamam.com/search?q=${this.state.ingredients}&app_id=8544bb7c&app_key=6a0f70f6ef250d50b41ebec6a0a31f15`)
       .then(function (response) {
-        console.log(response);
-      })
+
+        let responseData = response.data.hits;
+        let recipes = [...responseData]; //creates new array of recipes from the response
+
+        self.setState({
+          recipes
+        })
+
+      })//.catch will send request errors and will display a message to the user
       .catch(function (error) {
         console.log(error);
-        return "Sorry... No recipe for you!"
+        return "Sorry... No recipe for you!";
       });
 
     this.setState({
-      ingredient : ""
-    })
+      ingredients : ""
+    });
   }
 
   render() {
