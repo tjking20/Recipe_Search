@@ -1,15 +1,26 @@
 import React from 'react';
+// import search from './../assets/images/search.png';
 
 const IngredientForm = (props) => (
-		<div>
-			<form onSubmit={props.handleSubmit}>
-				<input 
-					type="text" 
-					className="ingredientField"
-					onChange={event => props.onInputChange(event)} 
-				/>
-				<input type="submit" value="Submit"/>
-			</form>
+		<div id="ingredientForm">
+			<div className="contentContainer">
+				<div id="title">
+					<a href="javascript:window.location.reload()">
+						<p className="titleText">Recipe</p>
+						<p className="titleText">Search</p>
+					</a>
+				</div>
+				
+				<form onSubmit={props.handleSubmit}>
+					<input 
+						id="ingredientInput"
+						type="text" 
+						className="ingredientField"
+						onChange={event => props.onInputChange(event)} 
+					/>
+					<input id="submitButton" type="submit" value=""/>
+				</form>
+			</div>
 		</div>
 	)
 

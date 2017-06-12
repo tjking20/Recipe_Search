@@ -1,21 +1,141 @@
 $prime-blue: #8D90C7;
 $nav-orange: #FBBE67;
 
-body{
+
+*{
+	margin: 0;
+	padding: 0;
+}
+ body{
+	
 	background-color: #CBCBCB;
 	font-size: 20px;
 	color: $prime-blue;
 	
 	a:link, a:visited, a:active, {
 		text-decoration: none;
-		background-color: $prime-blue;
 		color: $prime-blue;
-		// overflow: hidden;
 	}
 
 	ul{
 		list-style: none;
 	}
 
+
+	.contentContainer{
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+	}
+
 }
+
+#flexContainer{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+
+#header{
+	width: 100%;
+	position: fixed;
+	z-index: 5;
+
+	#ingredientForm{
+		padding: 1% 0%;
+		background-image: url(./assets/images/background.jpeg);
+		background-repeat: no-repeat scroll;
+		background-position: center top;
+
+
+
+		#title{
+			background-color: $nav-orange;
+			border-radius: 5em;
+			border: 5px dashed white;
+			width: 8%;
+			height: 8%;
+			padding: 3%;
+			color: white;
+			margin-right: 2%;
+			// text-align: center;
+
+			.titleText{
+				color: white;
+				font-size: 30px;
+				font-weight: bold;
+			}
+
+	
+		}
+
+
+		form{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+			padding-bottom: 1%;
+
+			#ingredientInput{
+				border: 0;
+				outline: 0;
+				background: transparent;
+				border-bottom: 2px solid white;
+				margin-right: 3%;
+				width: 50%;
+				font-size: 30px;
+				color: white;
+			}
+
+			#submitButton{
+				background:url(./assets/images/search.png);
+				height: 32px;
+				width: 32px;
+				border: 0;
+				outline: 0;
+			}
+		}
+
+	}
+}
+
+
+
+#recipesContainer {
+	z-index: 0;
+}
+
+#recipesContainer ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 20%;//fix this better
+
+	h3{
+		margin: 2%;
+	}
+
+	.recipeItem{
+		background-color: white;
+		border: 1% outset black;
+		border-radius: 1em;
+		margin: 1.5% 0%;
+		padding: 1.5%;
+		max-width: 300px;
+		text-align: center;
+		box-shadow: 0px 3px 7px #888888;
+	}
+
+
+}
+
+
+
+
+
+
 

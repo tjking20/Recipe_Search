@@ -7,21 +7,25 @@ const RecipesContainer = ({recipes}) => {
     const recipeItems = recipes.map((recipeItem) => {
       // console.log("hi") map function working correctly
         return( 
-            <Recipe 
-              recipeLink={recipeItem.recipe.url}
-              recipeImage={recipeItem.recipe.image} 
-              recipeTitle={recipeItem.recipe.label}
-            />
+          <Recipe 
+            recipeLink={recipeItem.recipe.url}
+            recipeImage={recipeItem.recipe.image} 
+            recipeTitle={recipeItem.recipe.label}
+          />
         );
     });
 
 
 
     return(
-    
-        <ul className="recipeList">
-          {recipeItems}
-        </ul>
+      <div id="recipesContainer">
+        <div className="contentContainer">
+          <ul>
+            {recipeItems}
+          </ul>
+        </div>
+      </div>
+        
     );
 }
 

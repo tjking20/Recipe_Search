@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import IngredientForm from './components/IngredientForm';
 import RecipesContainer from './components/RecipesContainer';
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 import axios from 'axios'
 
 
@@ -84,11 +84,12 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Navbar />
-        <IngredientForm 
-          handleSubmit={this.handleSubmit}
-          onInputChange={this.handleInputChange} />
+      <div id="flexContainer">
+        <nav id="header">
+          <IngredientForm 
+            handleSubmit={this.handleSubmit}
+            onInputChange={this.handleInputChange} />
+        </nav>
 
         <RecipesContainer
           recipes={this.state.recipes} />

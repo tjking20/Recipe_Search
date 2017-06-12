@@ -1,10 +1,88 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   background-color: #CBCBCB;
   font-size: 20px;
   color: #8D90C7; }
   body a:link, body a:visited, body a:active {
     text-decoration: none;
-    background-color: #8D90C7;
     color: #8D90C7; }
   body ul {
     list-style: none; }
+  body .contentContainer {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; }
+
+#flexContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; }
+
+#header {
+  width: 100%;
+  position: fixed;
+  z-index: 5; }
+  #header #ingredientForm {
+    padding: 1% 0%;
+    background-image: url(./assets/images/background.jpeg);
+    background-repeat: no-repeat scroll;
+    background-position: center top; }
+    #header #ingredientForm #title {
+      background-color: #FBBE67;
+      border-radius: 5em;
+      border: 5px dashed white;
+      width: 8%;
+      height: 8%;
+      padding: 3%;
+      color: white;
+      margin-right: 2%; }
+      #header #ingredientForm #title .titleText {
+        color: white;
+        font-size: 30px;
+        font-weight: bold; }
+    #header #ingredientForm form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      padding-bottom: 1%; }
+      #header #ingredientForm form #ingredientInput {
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 2px solid white;
+        margin-right: 3%;
+        width: 50%;
+        font-size: 30px;
+        color: white; }
+      #header #ingredientForm form #submitButton {
+        background: url(./assets/images/search.png);
+        height: 32px;
+        width: 32px;
+        border: 0;
+        outline: 0; }
+
+#recipesContainer {
+  z-index: 0; }
+
+#recipesContainer ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20%; }
+  #recipesContainer ul h3 {
+    margin: 2%; }
+  #recipesContainer ul .recipeItem {
+    background-color: white;
+    border: 1% outset black;
+    border-radius: 1em;
+    margin: 1.5% 0%;
+    padding: 1.5%;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0px 3px 7px #888888; }
