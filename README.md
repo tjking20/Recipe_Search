@@ -15,12 +15,11 @@ incomplete
 	- create recipe component
 	- loop over response data and assign nececarry data to recipe component props 
 
-- adding multiple inputs
-	-**may need to change how the input is rendered.
-	- implement an array of ingredients in state
-	- add plus or minus buttons with  counter in sate
-		-hook up counter to amount of input clones that on page. 
-	- limit inputs to five
-	- reset state on submit
+
 - add nav 
 - adding sass
+
+
+
+automation
+npm-run-all package (npm start or run build => starts server, compresses files, builds sass files)
