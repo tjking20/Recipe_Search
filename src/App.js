@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import IngredientForm from './components/IngredientForm';
 import RecipesContainer from './components/RecipesContainer';

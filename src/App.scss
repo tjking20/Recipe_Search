@@ -1,21 +1,26 @@
-.App {
-  text-align: center;
+$prime-blue: #8D90C7;
+$nav-orange: #FBBE67;
+
+body{
+	background-color: #CBCBCB;
+	font-size: 20px;
+	color: $prime-blue;
+	
+	a:link, a:visited, a:active, {
+		text-decoration: none;
+		background-color: $prime-blue;
+		color: $prime-blue;
+		// overflow: hidden;
+	}
+
+	ul{
+		list-style: none;
+	}
+
 }
 
-/*
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}*/
 
-.App-intro {
-  font-size: large;
-}
+#navbar{
+	background-color: $navbar;
 
-/*@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
-*/

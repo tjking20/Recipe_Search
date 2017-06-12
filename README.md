@@ -20,6 +20,8 @@ incomplete
 - adding sass
 
 
+Interfaces with an api
+-edamam api (users enter recipes, and the server returns recipe data)
 
 automation
 npm-run-all package (npm start or run build => starts server, compresses files, builds sass files)

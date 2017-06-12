@@ -1,15 +1,12 @@
 import React from 'react';
 
-// handlePageReload = () => {
-
-// }
 
 const Navbar = () => (
-	<nav>
-		<a href="#">
+	<nav id="navbar">
+		<a href="javascript:window.location.reload()">
 			<h1>Recipe Search</h1>
 		</a>
-		
+
 	</nav>
 );
 
