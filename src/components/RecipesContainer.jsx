@@ -8,6 +8,7 @@ const RecipesContainer = ({recipes}) => {
       // console.log("hi") map function working correctly
         return( 
           <Recipe 
+            key={recipeItem.recipe.label}
             recipeLink={recipeItem.recipe.url}
             recipeImage={recipeItem.recipe.image} 
             recipeTitle={recipeItem.recipe.label}
