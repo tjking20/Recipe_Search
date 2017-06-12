@@ -65,6 +65,10 @@ class App extends Component {
         //creates new array of recipes from the response
         let responseData = response.data.hits;
         let recipes = [...responseData]; 
+        if (recipes.length == 0){
+            alert("Sorry, your search returned no results");
+            return;
+        }
 
         //setting state to the array of recipes returned in response
         self.setState({
@@ -74,7 +78,6 @@ class App extends Component {
       })//.catch will send request errors and will display a message to the user
       .catch(function (error) {
         console.log(error);
-        return (<div>"Sorry... No recipe for you!"</div>)
       });
 
     this.setState({
