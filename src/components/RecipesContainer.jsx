@@ -4,11 +4,11 @@ import Recipe from './Recipe'
 const RecipesContainer = ({recipes}) => {
 
 
-    const recipeItems = recipes.map((recipeItem) => {
+    const recipeItems = recipes.map((recipeItem, index) => {
       // console.log("hi") map function working correctly
         return( 
           <Recipe 
-            key={recipeItem.recipe.label}
+            key={index}
             recipeLink={recipeItem.recipe.url}
             recipeImage={recipeItem.recipe.image} 
             recipeTitle={recipeItem.recipe.label}

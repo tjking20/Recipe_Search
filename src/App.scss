@@ -51,21 +51,29 @@ $nav-orange: #FBBE67;
 
 
 
-		#title{
+		#logo{
 			background-color: $nav-orange;
 			border-radius: 5em;
 			border: 5px dashed white;
-			width: 8%;
-			height: 8%;
-			padding: 3%;
+			width: 110px;
+			height: 110px;
+			padding: 1%;
 			color: white;
 			margin-right: 2%;
-			// text-align: center;
 
-			.titleText{
+
+			#logoLink{
+				padding: 1px;
+			}
+
+
+			.logoText{
 				color: white;
 				font-size: 30px;
 				font-weight: bold;
+				text-align: center;
+				line-height: 1;
+				vertical-align: center;
 			}
 
 	

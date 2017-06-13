@@ -4,10 +4,10 @@ import React from 'react';
 const IngredientForm = (props) => (
 		<div id="ingredientForm">
 			<div className="contentContainer">
-				<div id="title">
-					<a href="javascript:window.location.reload()">
-						<p className="titleText">Recipe</p>
-						<p className="titleText">Search</p>
+				<div id="logo">
+					<a href="javascript:window.location.reload()" id="logoLink">
+						<p className="logoText">Recipe</p>
+						<p className="logoText">Search</p>
 					</a>
 				</div>
 				

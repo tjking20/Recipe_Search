@@ -31,19 +31,24 @@ body {
     background-image: url(./assets/images/background.jpeg);
     background-repeat: no-repeat scroll;
     background-position: center top; }
-    #header #ingredientForm #title {
+    #header #ingredientForm #logo {
       background-color: #FBBE67;
       border-radius: 5em;
       border: 5px dashed white;
-      width: 8%;
-      height: 8%;
-      padding: 3%;
+      width: 110px;
+      height: 110px;
+      padding: 1%;
       color: white;
       margin-right: 2%; }
-      #header #ingredientForm #title .titleText {
+      #header #ingredientForm #logo #logoLink {
+        padding: 1px; }
+      #header #ingredientForm #logo .logoText {
         color: white;
         font-size: 30px;
-        font-weight: bold; }
+        font-weight: bold;
+        text-align: center;
+        line-height: 1;
+        vertical-align: center; }
     #header #ingredientForm form {
       display: flex;
       flex-direction: row;

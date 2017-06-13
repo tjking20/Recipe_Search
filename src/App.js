@@ -20,7 +20,31 @@ class App extends Component {
   }
 
 
+  // const axiosCall = () => {
+
+  //     const self= this;
+  //    //axios call sends an xmlHttpRequest to the api, and encodes it in JSON
+  //   axios.get("https://api.edamam.com/search?q=summer,food&from=0&to=50&app_id=8544bb7c&app_key=6a0f70f6ef250d50b41ebec6a0a31f15")
+  //     .then(function (response) {
+
+  //       //creates new array of recipes from the response
+  //       let responseData = response.data.hits;
+  //       let recipes = [...responseData]; 
+
+  //       //setting state to the array of recipes returned in response
+  //       self.setState({
+  //         recipes
+  //       })
+
+  //     })
+  //     .catch(function(error){
+  //       console.log(error);
+  //     });
+  // }
+
+
   componentDidMount() {
+
     const self= this;
 
     //axios call sends an xmlHttpRequest to the api, and encodes it in JSON
