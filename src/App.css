@@ -59,6 +59,8 @@ body {
         width: 50%;
         font-size: 30px;
         color: white; }
+      #header #ingredientForm form ::-webkit-input-placeholder {
+        color: #E9E5DF; }
       #header #ingredientForm form #submitButton {
         background: url(./assets/images/search.png);
         height: 32px;

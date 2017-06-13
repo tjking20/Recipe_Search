@@ -89,6 +89,9 @@ $nav-orange: #FBBE67;
 				font-size: 30px;
 				color: white;
 			}
+			::-webkit-input-placeholder{
+				color: #E9E5DF;
+			}
 
 			#submitButton{
 				background:url(./assets/images/search.png);

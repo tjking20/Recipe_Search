@@ -14,6 +14,7 @@ const IngredientForm = (props) => (
 				<form onSubmit={props.handleSubmit}>
 					<input 
 						id="ingredientInput"
+						placeholder="search recipes or ingredients..."
 						type="text" 
 						className="ingredientField"
 						onChange={event => props.onInputChange(event)} 

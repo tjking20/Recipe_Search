@@ -24,7 +24,7 @@ class App extends Component {
     const self= this;
 
     //axios call sends an xmlHttpRequest to the api, and encodes it in JSON
-    axios.get("https://api.edamam.com/search?q=summer,food&&app_id=8544bb7c&app_key=6a0f70f6ef250d50b41ebec6a0a31f15")
+    axios.get("https://api.edamam.com/search?q=summer,food&from=0&to=50&app_id=8544bb7c&app_key=6a0f70f6ef250d50b41ebec6a0a31f15")
       .then(function (response) {
 
         //creates new array of recipes from the response
@@ -57,7 +57,7 @@ class App extends Component {
     const self = this;
 
     //axios call sends an xmlHttpRequest to the api, and encodes it in JSON
-    axios.get(`https://api.edamam.com/search?q=${this.state.ingredients}&app_id=8544bb7c&app_key=6a0f70f6ef250d50b41ebec6a0a31f15`)
+    axios.get(`https://api.edamam.com/search?q=${this.state.ingredients}&from=0&to=50&app_id=8544bb7c&app_key=6a0f70f6ef250d50b41ebec6a0a31f15`)
       .then(function (response) {
 
         //creates new array of recipes from the response
