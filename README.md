@@ -1,29 +1,33 @@
-#URBN Coding Test
+# URBN Coding Test
 
-##Description
+## Description
 
 Recipe Search is an application allows users to easily search for meal ideas across a large collection of websites, with over 1.5 million total recipes.
  
 
+## Instructions for launching application
+-git clone https://github.com/tjking20/urbn-coding-test.git
+-yarn install 
+-yarn start
 
 
-##Primary Goals
+## Primary Goals
 
-###Build an application that interfaces with a public open api, allowing users to interact with the api and return data. 
+### Build an application that interfaces with a public open api, allowing users to interact with the api and return data. 
 -This application uses ReactJS and axios (api call) to access information from the edamam api.
 -Users can enter ingredients or specific information to return up to 50 recipes. They can then click on images to visit the recipe source.  
 
 
-##Bonus Goals
+## Bonus Goals
 
-###Api error handling
+### Api error handling
 -Axios calls catch api errors, and display them in the console. 
 -If the user enters a search that yields no results, the user will receive a message letting them know. They can then enter another search without reloading the page. 
 
-###Compressed files
+### Compressed files
 -Create react app makes use of automatic compression after running the app. Files are minified and transpiled into browser-friendly es5. 
 
-###CSS supersets (sass/less)
+### CSS supersets (sass/less)
 -While building this application I used the css preprocessor sass. I took advantage of nesting and variables while writing my code. 
 
 ### Use of a grid system
