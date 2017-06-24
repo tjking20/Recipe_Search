@@ -6,11 +6,11 @@ Recipe Search is an application allows users to easily search for meal ideas acr
 
 
 ## Users can search for specific recipes:
-!["video searching using recipe search to find sliders"](./src/assets/videos/recipe-search-2.mp4)
+!["video searching using recipe search to find sliders"](src/assets/videos/recipe-search-2.mp4)
 
  
 ## Users can also search for recipes with a key ingredient:
-!["video searching using recipe search to find recipes with blueberries"](./src/assets/videos/recipe-search-1.mp4)
+!["video searching using recipe search to find recipes with blueberries"](src/assets/videos/recipe-search-1.mp4)
 
 
 ## Technologies
@@ -24,7 +24,7 @@ Recipe Search is an application allows users to easily search for meal ideas acr
 
 
 ## Launching the application
--git clone https://github.com/tjking20/urbn-coding-test.git
+-git clone https://github.com/tjking20/Recipe_Search.git
 
 -yarn install 
 
